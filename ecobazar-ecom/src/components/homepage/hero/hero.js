@@ -3,7 +3,7 @@ import HeroMain from "./HeroMain";
 
 function Hero() {
     return(
-        <div className="Hero p-l-r">
+        <div className="Hero">
             {/* hero image section */}
             <div className="HeroSection d-flex">
                 <div className="OrganicFood">

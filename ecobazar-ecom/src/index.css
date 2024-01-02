@@ -1,7 +1,11 @@
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+body{
+ font-family: 'Poppins', sans-serif;
 }
 .d-flex{
     display: flex;
@@ -12,3 +16,30 @@
 .p-l-r{
     padding: 0px 160px;
 }
+.grid-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+/* poppins all css forms */
+
+.normal-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400; /* Weight 400 (regular) */
+  }
+  
+  .medium-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500; /* Weight 500 */
+  }
+  
+  .semibold-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Weight 600 */
+  }
+  
+  .emphasized-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400; /* Weight 400 (regular) */
+    font-style: italic; /* Apply italic style */
+  }

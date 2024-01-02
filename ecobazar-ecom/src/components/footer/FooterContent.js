@@ -1,9 +1,9 @@
 import Footer from "./Footer";
 import FooterLists from "./FooterLists";
 
-const FooterContent =FooterLists.map((footerListses)=>{
+const FooterContent =FooterLists.map((footerListses, index)=>{
     return(
-      <Footer FooterCollection={{
+      <Footer key={index} FooterCollection={{
         listone : footerListses.list1,
         listtwo : footerListses.list2,
         listthree : footerListses.list3,

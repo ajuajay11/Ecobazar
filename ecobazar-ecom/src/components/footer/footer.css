@@ -1,0 +1,19 @@
+/* footer section starts */
+.FooterSectionComp{
+    flex-direction: column;
+    background: #333;
+    color: #fff;
+}
+.footersecAll{
+    gap: 40px;
+}
+.Logo_section{
+    flex: 40%;
+}
+.FooterlistComp{
+    flex: 60%;
+}
+.footer_items{
+    flex-direction: column;
+    list-style: none;
+}

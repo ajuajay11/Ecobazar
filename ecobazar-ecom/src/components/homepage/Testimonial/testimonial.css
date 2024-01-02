@@ -1,0 +1,25 @@
+.testimonial-slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 600px; 
+    margin: 0 auto; 
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease; 
+  }
+
+  .testimonial-slider {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slide {
+    width: 33.33%;
+    padding: 20px;
+    border: 1px solid #ccc; 
+    transition: transform 0.5s ease;
+  }
+  

@@ -1,0 +1,20 @@
+/* header css starts */
+
+.HeadersectionAll{
+    flex-direction: column;
+    justify-content: center;
+}
+.HeaderTopSection{
+    border-bottom: 1px solid #afafaf4d;
+}
+.HeaderSection_Logo{
+    gap: 250px;
+}
+.Navigation_section{
+    background: #333;
+    color: #fff;
+}
+.Navigation_section .nav{
+    list-style: none;
+    gap: 20px;
+}
