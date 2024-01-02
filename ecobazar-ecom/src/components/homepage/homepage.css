@@ -1,0 +1,60 @@
+
+/* header css starts */
+
+.HeadersectionAll{
+    flex-direction: column;
+    justify-content: center;
+}
+.HeaderTopSection{
+    border-bottom: 1px solid #afafaf4d;
+}
+.HeaderSection_Logo{
+    gap: 250px;
+}
+.Navigation_section{
+    background: #333;
+    color: #fff;
+}
+.Navigation_section .nav{
+    list-style: none;
+    gap: 20px;
+}
+
+/* footer section starts */
+.FooterSectionComp{
+    flex-direction: column;
+    background: #333;
+    color: #fff;
+}
+.footersecAll{
+    gap: 40px;
+}
+.Logo_section{
+    flex: 40%;
+}
+.FooterlistComp{
+    flex: 60%;
+}
+.footer_items{
+    flex-direction: column;
+    list-style: none;
+}
+
+/* Hero section starts */
+.HeroSection{
+gap: 10px;
+}
+
+.OrganicFood{
+    background: url(./images/BannarBig.png);
+}
+.offer{
+    background: url(./images/Vegetables.png);
+}
+.SpecialProduct{
+    background: url(./images/BG.png);
+}
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+  }
