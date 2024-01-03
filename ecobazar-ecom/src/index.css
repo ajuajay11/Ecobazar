@@ -51,3 +51,8 @@ body{
     font-weight: 400; /* Weight 400 (regular) */
     font-style: italic; /* Apply italic style */
   }
+
+  .PriceRangeDiv{
+    width: 200px;
+  }
+  
