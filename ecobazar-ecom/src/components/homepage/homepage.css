@@ -11,7 +11,7 @@ gap: 30px;
     background: url(./images/BannarBig.png);
     background-size: cover;
     background-repeat: no-repeat;
-    flex: 70%;
+    width: 70%;
     height: 70vh;
     flex-direction: column;
     align-items: flex-start;
@@ -53,36 +53,36 @@ gap: 30px;
   padding: 15px 20px;
 }
 .offer{
-  flex: 30%;
+  width: 30%;
   gap: 30px;
   flex-direction: column;
 }
 
-.offer .SpecialProduct{
+.offer .offer_SpecialProduct{
   background: url(./images/offeroneimg.png);  
   background-size: contain;
     background-repeat: no-repeat;
-    height:33vh ;
+    height:100% ;
 }
-.summerSale{
+.offer_summerSale{
   justify-content: start;
   align-items: center;
   padding-left: 28px;
 }
-.SpecialProduct{
+.offer_SpecialProduct{
   justify-content: center;
   align-items: center;
   padding-top: 100px;
 
 }
-.offer .summerSale{
+.offer .offer_summerSale{
  background: url(./images/offertwoimg.png);
   background-size: contain;
     background-repeat: no-repeat;
-    height:33vh;
+    height:100%;
 }
-.summerSale button,
-.SpecialProduct button {
+.offer_summerSale button,
+.offer_SpecialProduct button {
   padding: 0;
   background: none;
   cursor: pointer;
@@ -96,7 +96,7 @@ gap: 30px;
   justify-content: center;
 }
 .heroItemsRendered{
-  gap: 45px;
+  gap: 80px;
 }
 .Delivery_section{
   gap: 10px;
@@ -121,13 +121,16 @@ gap: 30px;
   gap: 30px;
 }
 
-.PopularSection .viewAllAndTitle{
+.viewAllAndTitle{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .popularCategoryAllsection{
   gap: 25px;
+  display: grid;  
+  grid-template-columns: repeat(6, 2fr);
+  justify-content: space-between;
 }
 .viewAllAndTitle h2{
   font-size: 30px;
@@ -147,7 +150,6 @@ transition: 0.5s;
 cursor: pointer;
 border-radius: 5px;
 gap: 10px;
-width: 150px;
 }
 .popularCategoryImgsection:hover{
 border: 1px solid #00B207;
@@ -286,8 +288,7 @@ object-fit: contain;
 
 .Ad_img{
   background: url(./images/DiscountBannar.png);
-  background-size: contain;
-  height: 50vh;
+  background-size: cover;
   background-repeat: no-repeat;
   justify-content: end;}
 
@@ -298,16 +299,16 @@ object-fit: contain;
   .Ad-content .SpecialProduct .Shopnow{
     background: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 30px;
     border-radius: 25px;
+    
 }
 
 .Ad-content{
   flex-direction: column;
   align-items: start;
-  padding-right: 30px;
-  padding-top: 30px;
-
+  padding-right: 50px;
+  padding: 69px 70px;
 }
 .Ad_img{
   color: #fff;

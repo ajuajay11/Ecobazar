@@ -7,7 +7,7 @@ function PopularCategoryAll(){
         <PopularCategory key={index} dataCollections={items} />
       ));
     
-      return <div className="popularCategoryAllsection grid-container d-flex">{caterogyAll}</div>;
+      return <div className="popularCategoryAllsection">{caterogyAll}</div>;
 
 }
 export default PopularCategoryAll;

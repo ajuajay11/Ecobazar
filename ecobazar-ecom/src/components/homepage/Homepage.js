@@ -17,7 +17,7 @@ function Homepage() {
   return (
     <div className="App"> 
     <Header/>
-    <div className="p-l-r">
+    <div className="homepageAllsection">
       <Hero/>
       <PopularSection />
       <MainPopularProduct/>
@@ -28,8 +28,9 @@ function Homepage() {
       <Testimonial/>
       <AllFeatureProduct />
       <Followus/>
-      </div>
-      <FooterSection_All/>
+    </div>
+    
+    <FooterSection_All/>
 
    </div>
   );

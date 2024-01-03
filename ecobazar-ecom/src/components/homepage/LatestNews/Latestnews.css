@@ -1,0 +1,45 @@
+.blogdata{
+    display: flex;
+    flex-direction: column;
+      align-items: center;
+}
+.newBlogsection{
+    display: flex;
+    gap: 25px;
+    width: auto;
+    height: auto;
+}
+.Blogs{
+    width: 33.33%;
+}
+
+.Blogs .BlogImg img{
+object-fit: cover;
+width: 100%;
+height: auto;
+
+}
+.food-section{
+    padding: 15px 18px;
+  box-shadow: 0 3px 7px 1px rgba(0, 0, 0, 0.3);  
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  margin-top: -10px;
+
+}
+.food-section .comments{
+display: flex;
+gap: 18px;
+align-items: center;
+font-size: 14px;
+color: #4d4d4d;
+}
+.comments_icon{
+    color: #848484;
+}
+.blogcontent p{
+    font-size: 18px;
+}
+.blogcontent .SpecialProduct .Shopnow{
+    padding: 20px 0px 0px;
+}

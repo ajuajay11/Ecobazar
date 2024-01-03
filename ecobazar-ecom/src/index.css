@@ -7,6 +7,7 @@
 body{
  font-family: 'Poppins', sans-serif;
 }
+
 .d-flex{
     display: flex;
 }
@@ -45,4 +46,9 @@ body{
     font-family: 'Poppins', sans-serif;
     font-weight: 400; /* Weight 400 (regular) */
     font-style: italic; /* Apply italic style */
+  }
+
+  .homepageAllsection{
+    max-width:1300px ;
+    margin: 0 auto;
   }
