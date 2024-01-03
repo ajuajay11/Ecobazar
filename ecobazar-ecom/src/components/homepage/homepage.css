@@ -1,28 +1,336 @@
-/* Hero section starts */
+/*======== Hero section starts------------- */
 .HeroSection{
-gap: 10px;
+gap: 30px;
+}
+.Hero{
+  padding: 20px 0px;
+  flex-direction: column;
+  gap: 30px;
 }
 .OrganicFood{
     background: url(./images/BannarBig.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 70%;
+    height: 70vh;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #fff;
+    gap: 20px;
+    padding-left: 40px;
+    border-radius: 15px;
+}
+.OrganicFoodcontents{
+  border-left: 3px solid #84D187;
+  padding: 3px 0px 0px 15px;
+  flex-direction: column;
+  gap: 8px;
+}
+.OrganicFood .FreshAndHealthy{
+  width: 460px;
+  font-size: 42px;
+}
+.OrganicFoodcontents .Freeshipping{
+  font-size: 14px;
+}
+.OrganicFoodcontentssection .Saleupto{
+  font-size: 20px;
+}
+.OrganicFoodcontentssection .percentageoff{
+  background:#FF8A00;
+  padding: 5px 12px;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+.Shopnow{
+  background: #fff;
+  border: none;
+  border-radius: 25px;
+  color: #00B207;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 15px 20px;
 }
 .offer{
-    background: url(./images/Vegetables.png);
+  flex: 30%;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.offer .SpecialProduct{
+  background: url(./images/offeroneimg.png);  
+  background-size: contain;
+    background-repeat: no-repeat;
+    height:33vh ;
+}
+.summerSale{
+  justify-content: start;
+  align-items: center;
+  padding-left: 28px;
 }
 .SpecialProduct{
-    background: url(./images/BG.png);
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+
+}
+.offer .summerSale{
+ background: url(./images/offertwoimg.png);
+  background-size: contain;
+    background-repeat: no-repeat;
+    height:33vh;
+}
+.summerSale button,
+.SpecialProduct button {
+  padding: 0;
+  background: none;
+  cursor: pointer;
+
 }
 
-/* PopularProducts page started */
+.shippingmaincontent{
+  box-shadow: 0 3px 7px 1px rgba(0, 0, 0, 0.3);  
+  padding: 25px 0px;
+  border-radius:9px ;
+  justify-content: center;
+}
+.heroItemsRendered{
+  gap: 45px;
+}
+.Delivery_section{
+  gap: 10px;
+  align-items: center;
+}
+.Delivery_section .icon{
+  justify-content: center;
+}
+.Delivery_section_text h1{
+  font-size: 14px;
+  font-weight: 900;
+  color: #1a1a1a;
+}
+.Delivery_section_text p{
+  font-size: 11px;
+  color: #666;
+}
+/* ------------PopularCategory page started------------- */
 
+.PopularSection{
+  flex-direction: column;
+  gap: 30px;
+}
+
+.PopularSection .viewAllAndTitle{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popularCategoryAllsection{
+  gap: 25px;
+}
+.viewAllAndTitle h2{
+  font-size: 30px;
+}
+.viewAllAndTitle .ViewAll{
+  color: #00B207;
+  font-size: 16px;
+}
+
+.popularCategoryImgsection{
+flex-direction: column;
+align-items: center;
+justify-content: center;
+border: 1px solid #c4c4c4;
+padding: 20px 10px;
+transition: 0.5s;
+cursor: pointer;
+border-radius: 5px;
+gap: 10px;
+width: 150px;
+}
+.popularCategoryImgsection:hover{
+border: 1px solid #00B207;
+color: #00B207;
+box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+}
+.popularCategoryImgsection img{
+  width: 120px;
+}
+.popularCategoryImgsection .category{
+font-size: 14px;
+}
+
+/* ------------PopularProducts page started------------- */
+
+
+.MainPopularProduct{
+  padding: 50px 0px 30px;
+}
 .PopularProducts{
-border: 1px solid #333;
+  flex-direction: column;
+  justify-content: center;
+}
+.popularCategoryImgsection2{
+  border: 1px solid #d5d5d5;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 10px;
+  overflow: hidden;
+}
+.popularCategoryImgsection2:hover{
+  border: 1px solid #00B207;
+  opacity: 1;
+}
+
+.p-img{
+  position: relative;
+}
+.wishlistAndView{
+  position: absolute;
+  flex-direction: column;
+  gap: 10px;
+  top: 10px;
+  right:10px;
+  color: #fff;
+  opacity: 0;
+}
+.cartButton .cartsvg{
+  font-size: 14px;
+   color: #fff;
+    background: #c4c4c4;
+     padding:8px; 
+     border-radius:15px;
+}
+.cartButton .cartsvg:hover{
+  
+    background: #00B207 ;
+    transition: 0.5s;
+}
+.p-contents.cartButton .cartsvg:hover{
+    background-color: #00B207;
+}
+.popularCategoryImgsection2 .wishlistAndView {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out; /* Adding transition for a smooth effect */
+}
+
+.popularCategoryImgsection2:hover .wishlistAndView {
+  opacity: 1;
+}
+
+.wishlistAndView .wishlist, .wishlistAndView .viewimg
+{
+  background-color: #79797952;
+  padding: 4px 6px;
+  font-size: 14px;
+  border-radius: 14px;
+  box-shadow: 0px 0.5px 2px 2px rgba(0, 0, 0, 0.3);  
+}
+.wishlistAndView .wishlist:hover
+{
+  background-color: #00B207;
+  transition: 0.4s;
+  opacity: 1;
+}
+.wishlistAndView .viewimg:hover{
+  background-color: #00B207;
+  transition: 0.4s;
+}
+.p-img img{
+  width: 100%;
+}
+.p-img .saleoff{
+  position: absolute;
+  top:6px;
+  left: 6px;
+  background: #EA4B48;
+  color: #fff;
+  font-size: 10px;
+    padding: 3px 10px;
+    border-radius: 5px;
 }
 .PopularProductSection{
   display: grid;
   grid-template-columns: repeat(5, 2fr);
 }
+.p-contents{
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 12px;
+}
+.p-contents .p-nameAndprice{
+  font-size: 14px;
+  color: #4d4d4d;
+  font-weight: 600;
+}
+.p-nameAndprice .price{
+  font-size: 16px;
+  color: #000;
+  font-weight: 700;
+}
+.p-nameAndprice .discount{
+  color: #666;
+  font-weight: 400  ;
+}
 
-/* hotdealsection */
+.p-nameAndprice .star{
+width: 60px;
+height: 15px;
+object-fit: contain;
+}
+
+
+/* -------------------advertaismnet section started--------------- */
+
+
+.Ad_img{
+  background: url(./images/DiscountBannar.png);
+  background-size: contain;
+  height: 50vh;
+  background-repeat: no-repeat;
+  justify-content: end;}
+
+  .Ad-content .SpecialProduct{
+    padding: 0;
+
+  }
+  .Ad-content .SpecialProduct .Shopnow{
+    background: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+.Ad-content{
+  flex-direction: column;
+  align-items: start;
+  padding-right: 30px;
+  padding-top: 30px;
+
+}
+.Ad_img{
+  color: #fff;
+}
+.Ad-content .Ad-content_Sumersale{
+text-transform:uppercase;
+font-size: 14px;
+}
+.Ad-content .Sumersaleoffer{
+  font-size: 56px;
+  color: #FF8A00;
+}
+.Ad-content .Sumersaleoffer_off{
+  color: #fff;
+}
+.Ad-content .Ad-text{
+  font-size: 16px;
+  width: 320px;
+  padding-bottom: 20px;
+}
+
+
+/* ----------------------hotdealsection ---------------------*/
 .Hotdealrightsec{
   display: grid;
   grid-template-columns: repeat(3, 6fr);

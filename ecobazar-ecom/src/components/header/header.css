@@ -3,18 +3,133 @@
 .HeadersectionAll{
     flex-direction: column;
     justify-content: center;
+    font-size: 12px;
+    color: #666;
 }
 .HeaderTopSection{
     border-bottom: 1px solid #afafaf4d;
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
+.HeaderTopSection_location{
+    cursor: pointer;
+}
+.font{
+    color: #b1b1b1;
+
+}
+.HeaderTopSection_signup{
+    gap: 10px;
+    cursor: pointer;
+    justify-content: center;
+}
+.HeaderTopSection_signup .Languages select{
+    border: none;
+    color: #666;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: 'poppins';
+}
+.line{
+    color: #66666646;
+    font-size: 10px;
+}
+
+/* header section start */
+.HeaderSection{
+    font-size: 12px;
+    color: #666;
+    align-items: center;
+    padding-top:8px;
+    padding-bottom:8px;
+}
+
 .HeaderSection_Logo{
+    align-items: center;
     gap: 250px;
 }
+
+.HeaderSection_Logo .logo img{
+    width: 183px;
+    height: 38px;
+}
+.inputWithicon{
+    position: relative;
+}
+.searchbox{
+    position: absolute;
+    left: 14px;
+    top: 10px;
+}
+.HeaderSection_Logo input{
+    border: 0.5px solid #E6E6E6;
+    width: 298px;
+    height: 34px;
+    padding-left: 30px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-right: 0px !important;
+}
+.HeaderSection_Logo input:focus {
+    border: 1px solid #00254d6e; 
+    outline: none;
+}
+.HeaderSection_Logo .Submit{
+    background: #00B207;
+    color: #fff;
+    border: none;
+    padding: 0px 20px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor: pointer;
+}
+.HeaderSection .HeaderSection_CartButton{
+    gap: 10px;
+    font-size: 20px;
+    color: #666666c1;
+    cursor: pointer;
+}
+.HeaderSection_CartButton .cart{
+    position: relative;
+cursor: pointer;
+
+}
+.cart .counter{
+    position: absolute;
+    color: #fff;
+    left: 11px;
+    font-size: 10px;
+    background: #00B207;
+    border-radius: 15px;
+    padding: 0px 3px;
+}
+.carttexts{
+    font-size: 11px;
+    flex-direction: column;
+}
+.carttexts .price{
+   color: #000;
+}
+
+/* Navigation starts */
+
 .Navigation_section{
     background: #333;
-    color: #fff;
+    color: #999;
+    font-size: 14px;
+    padding-top:14px ;
+    padding-bottom:14px ;
 }
 .Navigation_section .nav{
     list-style: none;
-    gap: 20px;
+    gap: 30px;
+}
+.Navigation ul{
+    cursor: pointer;
+}
+.Navigation ul .active{
+    color: #fff;
+}
+.Navigation_section .PhoneNumber{
+    color: #fff;
 }

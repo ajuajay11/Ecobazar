@@ -7,7 +7,7 @@ function HeroMain() {
       <HeroFreeshipping key={index} heroAllSection={item} />
     ));
   
-    return <div className="d-flex">{heroItemsRendered}</div>;
+    return <div className="heroItemsRendered d-flex">{heroItemsRendered}</div>;
   };
   
   

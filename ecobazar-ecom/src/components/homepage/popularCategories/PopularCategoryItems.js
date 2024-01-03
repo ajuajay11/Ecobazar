@@ -8,31 +8,40 @@ let PopularCategoryItems=[{
     },
     {
     img:Vegtables,
-    categoryText:'Fresh Fruit'
+    categoryText:'Fresh Vegetables'
     },
     {
     img:Vegtables,
-    categoryText:'Fresh Fruit'
+    categoryText:'Meat & Fish'
     },
     {
     img:Vegtables,
-    categoryText:'Fresh Fruit'
+    categoryText:'Snacks'
     },{
         img:Vegtables,
-        categoryText:'Fresh Fruit'
+        categoryText:'Beverages'
         },
         {
             img:Vegtables,
-            categoryText:'Fresh Fruit'
+            categoryText:'Beauty & Health'
             },{
                 img:Vegtables,
-                categoryText:'Fresh Fruit'
+                categoryText:'Bread & Bakery'
                 },{
                     img:Vegtables,
-                    categoryText:'Fresh Fruit'
+                    categoryText:'Baking Needs'
                     },{
                         img:Vegtables,
-                        categoryText:'Fresh Fruit'
-                        }]
+                        categoryText:'Cooking'
+                        },{
+                            img:Vegtables,
+                            categoryText:'Diabetic Food'
+                            },{
+                                img:Vegtables,
+                                categoryText:'Dish Detergents'
+                                },{
+                                    img:Vegtables,
+                                    categoryText:'Oil'
+                                    }]
 
 export default PopularCategoryItems;
