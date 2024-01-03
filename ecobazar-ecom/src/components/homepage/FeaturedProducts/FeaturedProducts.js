@@ -8,8 +8,7 @@ function FeaturedProducts() {
 
      return(
         <div className="PopularProducts">
-            <div className="popularCategoryImgsection">
-                
+            <div className="FeaturedProductsImgsection">
                <div className="PopularProductSection">
                 {SomeOftheProduct}
                </div>
