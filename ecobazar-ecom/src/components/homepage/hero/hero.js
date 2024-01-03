@@ -20,10 +20,10 @@ function Hero() {
                     <button className="Shopnow"> Shop now <FontAwesomeIcon icon={faArrowRight} /></button>
                 </div>
                 <div className="offer d-flex">
-                    <div className="summerSale d-flex">
+                    <div className="offer_summerSale d-flex">
                         <button className="Shopnow"> Shop now <FontAwesomeIcon icon={faArrowRight} /></button>
                     </div>
-                    <div className="SpecialProduct d-flex">
+                    <div className="offer_SpecialProduct d-flex">
                         <button className="Shopnow"> Shop now <FontAwesomeIcon icon={faArrowRight} /></button>
                     </div>
                 </div>
