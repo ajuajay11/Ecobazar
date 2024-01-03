@@ -8,6 +8,11 @@ import img7 from './../homepage/images/Image-6.png'
 import img8 from './../homepage/images/Image-7.png'
 
 
+// star
+import ratingfour from './../homepage/images/Rating_four.png'
+import ratingfive from './../homepage/images/Rating_five.png'
+
+
 let Data=[{
     id: 1,
     pimg:img1,
@@ -15,7 +20,7 @@ let Data=[{
     pname: 'Product 1',
     ptitle:'Green Apple',
     price:'$14.99',
-    star:5,
+    starImg:ratingfive,
     category:'Fruits'
 },
     {
@@ -24,7 +29,7 @@ let Data=[{
         pname: 'Product 2',
         ptitle:'Green Apple',
         price:'$14.99',
-        star:5,
+        starImg:ratingfour,
         category:'vegetables'
     },
     {
@@ -33,7 +38,7 @@ let Data=[{
         pname: 'Product ',
         ptitle:'Green Apple',
         price:'$14.99',
-        star:5,
+        starImg:ratingfive,
         category:'Fruits'
     },
     {
@@ -42,7 +47,7 @@ let Data=[{
         pname: 'Product ',
         ptitle:'Green Apple',
         price:'$14.99',
-        star:5,
+            starImg:ratingfour,
         category:'Fruits'
     },
     {
@@ -51,23 +56,23 @@ let Data=[{
         pname: 'Product ',
         ptitle:'Green Apple',
         price:'$14.99',
-        star:5,
+    starImg:ratingfive,
         category:'Fruits'
     } ,{
         id: 6,
-        pimg:img6,
+    starImg:ratingfive,
+    pimg:img6,
         pname: 'Product ',
         ptitle:'Green Apple',
         price:'$14.99',
-        star:5,
-        category:'Fruits'
+            category:'Fruits'
     } ,{
         id: 7,
         pimg:img7,
         pname: 'Product ',
         ptitle:'Green Apple',
         price:'$14.99',
-        star:5,
+    starImg:ratingfour,
         category:'Fruits'
     } ,{
         id: 8,
@@ -75,7 +80,7 @@ let Data=[{
         pname: 'Product ',
         ptitle:'Green Apple',
         price:'$14.99',
-        star:5,
+    starImg:ratingfour,
         category:'Fruits'
     },
     {
@@ -84,7 +89,7 @@ let Data=[{
         pname: 'Product ',
         ptitle:'Green Apple',
         price:'$14.99',
-        star:5,
+    starImg:ratingfour,
         category:'Fruits'
     },
     {
@@ -93,7 +98,7 @@ let Data=[{
         pname: 'Product ',
         ptitle:'Green Apple',
         price:'$14.99',
-        star:5,
+    starImg:ratingfour,
         category:'Fruits'
     }
 

@@ -1,22 +1,30 @@
-import posterone from './../images/Poster_One.png'
-import postertwo from './../images/Poster_Two.png'
-import posterthree from './../images/Poster_Three.png'
+import posterone from './../images/BannarOne.png'
+import postertwo from './../images/Bannartwo.png'
+import posterthree from './../images/Bannerthree.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight} from '@fortawesome/free-solid-svg-icons';
 
 function Posters(){
 return(
     <div className="PostersSection d-flex">
-        <div className="poster1">
+        <div className="posters">
             <img className="" src={posterone} />
-            <button className="Shopnow">ShopNow</button>
+            <div className="SpecialProduct d-flex">
+                <button className="Shopnow"> Shop now <FontAwesomeIcon icon={faArrowRight} /></button>
+            </div>
         </div>
-        <div className="poster2">
+        <div className="posters">
         <img className="" src={postertwo} />
-        <button className="Shopnow">ShopNow</button>
+        <div className="SpecialProduct d-flex">
+            <button className="Shopnow"> Shop now <FontAwesomeIcon icon={faArrowRight} /></button>
         </div>
-        <div className="poster3">
-        <img className="" src={posterthree} /> 
-        <button className="Shopnow">ShopNow</button>
-         </div>
+        </div>
+        <div className="posters">
+            <img className="" src={posterthree} /> 
+            <div className="SpecialProduct d-flex">
+                <button className="Shopnow"> Shop now <FontAwesomeIcon icon={faArrowRight} /></button>
+            </div>
+            </div>
     </div>
 )
 }

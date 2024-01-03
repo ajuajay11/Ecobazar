@@ -162,36 +162,175 @@ font-size: 14px;
 }
 
 /* ------------PopularProducts page started------------- */
+
+
 .MainPopularProduct{
-  padding: 50px 0px 0px;
+  padding: 50px 0px 30px;
+}
+.PopularProducts{
+  flex-direction: column;
+  justify-content: center;
 }
 .popularCategoryImgsection2{
-  border: 1px solid #333;
+  border: 1px solid #d5d5d5;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 10px;
+  overflow: hidden;
 }
 .popularCategoryImgsection2:hover{
   border: 1px solid #00B207;
+  opacity: 1;
 }
 
 .p-img{
   position: relative;
 }
+.wishlistAndView{
+  position: absolute;
+  flex-direction: column;
+  gap: 10px;
+  top: 10px;
+  right:10px;
+  color: #fff;
+  opacity: 0;
+}
+.cartButton .cartsvg{
+  font-size: 14px;
+   color: #fff;
+    background: #c4c4c4;
+     padding:8px; 
+     border-radius:15px;
+}
+.cartButton .cartsvg:hover{
+  
+    background: #00B207 ;
+    transition: 0.5s;
+}
+.p-contents.cartButton .cartsvg:hover{
+    background-color: #00B207;
+}
+.popularCategoryImgsection2 .wishlistAndView {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out; /* Adding transition for a smooth effect */
+}
+
+.popularCategoryImgsection2:hover .wishlistAndView {
+  opacity: 1;
+}
+
+.wishlistAndView .wishlist, .wishlistAndView .viewimg
+{
+  background-color: #79797952;
+  padding: 4px 6px;
+  font-size: 14px;
+  border-radius: 14px;
+  box-shadow: 0px 0.5px 2px 2px rgba(0, 0, 0, 0.3);  
+}
+.wishlistAndView .wishlist:hover
+{
+  background-color: #00B207;
+  transition: 0.4s;
+  opacity: 1;
+}
+.wishlistAndView .viewimg:hover{
+  background-color: #00B207;
+  transition: 0.4s;
+}
+.p-img img{
+  width: 100%;
+}
 .p-img .saleoff{
   position: absolute;
-  top: 0;
-  left: 0;
+  top:6px;
+  left: 6px;
   background: #EA4B48;
   color: #fff;
-  font-size: 14px;
-  padding: 12px;
+  font-size: 10px;
+    padding: 3px 10px;
+    border-radius: 5px;
 }
 .PopularProductSection{
   display: grid;
   grid-template-columns: repeat(5, 2fr);
 }
+.p-contents{
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 12px;
+}
+.p-contents .p-nameAndprice{
+  font-size: 14px;
+  color: #4d4d4d;
+  font-weight: 600;
+}
+.p-nameAndprice .price{
+  font-size: 16px;
+  color: #000;
+  font-weight: 700;
+}
+.p-nameAndprice .discount{
+  color: #666;
+  font-weight: 400  ;
+}
+
+.p-nameAndprice .star{
+width: 60px;
+height: 15px;
+object-fit: contain;
+}
 
 
+/* -------------------advertaismnet section started--------------- */
 
-/* hotdealsection */
+
+.Ad_img{
+  background: url(./images/DiscountBannar.png);
+  background-size: contain;
+  height: 50vh;
+  background-repeat: no-repeat;
+  justify-content: end;}
+
+  .Ad-content .SpecialProduct{
+    padding: 0;
+
+  }
+  .Ad-content .SpecialProduct .Shopnow{
+    background: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+.Ad-content{
+  flex-direction: column;
+  align-items: start;
+  padding-right: 30px;
+  padding-top: 30px;
+
+}
+.Ad_img{
+  color: #fff;
+}
+.Ad-content .Ad-content_Sumersale{
+text-transform:uppercase;
+font-size: 14px;
+}
+.Ad-content .Sumersaleoffer{
+  font-size: 56px;
+  color: #FF8A00;
+}
+.Ad-content .Sumersaleoffer_off{
+  color: #fff;
+}
+.Ad-content .Ad-text{
+  font-size: 16px;
+  width: 320px;
+  padding-bottom: 20px;
+}
+
+
+/* ----------------------hotdealsection ---------------------*/
 .Hotdealrightsec{
   display: grid;
   grid-template-columns: repeat(3, 6fr);
@@ -200,4 +339,3 @@ font-size: 14px;
 .Hotdealssec img{
     width: 120px;
 }
-
