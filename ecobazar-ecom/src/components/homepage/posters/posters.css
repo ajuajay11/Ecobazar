@@ -14,13 +14,13 @@
 }
 .posters .SpecialProduct{
     position: absolute;
-    top: 45%;
-    left:30%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -196%);
 }
 .posters .SpecialProduct .Shopnow{
     background: #fff;
     border: none;
     padding: 10px 20px;
     border-radius: 25px;
-    margin-top: -50px;
 }

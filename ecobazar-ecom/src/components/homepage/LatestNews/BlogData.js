@@ -1,19 +1,21 @@
-// import Blogimagestwo from './../images/Blogimgestwo';
-// import Blogimagesthree from './../images/Blogimgesthree';
+import Blogimagestwo from './../images/Blogimgesone.png';
+import Blogimagesthree from './../images/Blogimgesthree.png';
+import Blogimagesone from './../images/Blogimgestwo.png';
 
 let BlogData = [
+  {
+    img: Blogimagestwo,
+    text: 'Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.',
+  },
     {
-      img: './../images/Blogimgesone.png',
-      text: 'Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.',
+      img:Blogimagesone,
+      text: 'Eget lobortis lorem lacinia. Vivamus pharetra semper,',
     },
     {
-      img: './../images/Blogimgestwo.png',
-      text: 'Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.',
-    },
-    {
-      img: './../images/Blogimgesthree.png',
-      text: 'Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.',
-    },
+      img: Blogimagesthree,
+      text: 'Maecenas blandit risus elementum mauris malesuada.',
+    } 
+   
   ];
   
 export default BlogData;

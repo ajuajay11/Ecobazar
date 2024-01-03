@@ -7,6 +7,7 @@
 body{
  font-family: 'Poppins', sans-serif;
 }
+
 .d-flex{
     display: flex;
 }
@@ -49,4 +50,8 @@ body{
 
   .PriceRangeDiv{
     width: 200px;
+  }
+  .homepageAllsection{
+    max-width:1300px ;
+    margin: 0 auto;
   }
