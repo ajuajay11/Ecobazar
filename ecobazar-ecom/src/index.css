@@ -24,6 +24,10 @@ body{
 .line-thr{
   text-decoration: line-through;
 }
+.mx-w-1300{
+  max-width: 1300px;
+  margin: 0 auto;
+}
 
 /* poppins all css forms */
 
@@ -51,7 +55,4 @@ body{
   .PriceRangeDiv{
     width: 200px;
   }
-  .homepageAllsection{
-    max-width:1300px ;
-    margin: 0 auto;
-  }
+  
