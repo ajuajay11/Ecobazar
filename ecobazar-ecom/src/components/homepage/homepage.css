@@ -1,26 +1,195 @@
-/* Hero section starts */
+/*======== Hero section starts------------- */
 .HeroSection{
-gap: 10px;
+gap: 30px;
+}
+.Hero{
+  padding: 20px 0px;
+  flex-direction: column;
+  gap: 30px;
 }
 .OrganicFood{
     background: url(./images/BannarBig.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 70%;
+    height: 70vh;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #fff;
+    gap: 20px;
+    padding-left: 40px;
+    border-radius: 15px;
+}
+.OrganicFoodcontents{
+  border-left: 3px solid #84D187;
+  padding: 3px 0px 0px 15px;
+  flex-direction: column;
+  gap: 8px;
+}
+.OrganicFood .FreshAndHealthy{
+  width: 460px;
+  font-size: 42px;
+}
+.OrganicFoodcontents .Freeshipping{
+  font-size: 14px;
+}
+.OrganicFoodcontentssection .Saleupto{
+  font-size: 20px;
+}
+.OrganicFoodcontentssection .percentageoff{
+  background:#FF8A00;
+  padding: 5px 12px;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+.Shopnow{
+  background: #fff;
+  border: none;
+  border-radius: 25px;
+  color: #00B207;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 15px 20px;
 }
 .offer{
-    background: url(./images/Vegetables.png);
+  flex: 30%;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.offer .SpecialProduct{
+  background: url(./images/offeroneimg.png);  
+  background-size: contain;
+    background-repeat: no-repeat;
+    height:33vh ;
+}
+.summerSale{
+  justify-content: start;
+  align-items: center;
+  padding-left: 28px;
 }
 .SpecialProduct{
-    background: url(./images/BG.png);
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+
+}
+.offer .summerSale{
+ background: url(./images/offertwoimg.png);
+  background-size: contain;
+    background-repeat: no-repeat;
+    height:33vh;
+}
+.summerSale button,
+.SpecialProduct button {
+  padding: 0;
+  background: none;
+  cursor: pointer;
+
 }
 
-/* PopularProducts page started */
+.shippingmaincontent{
+  box-shadow: 0 3px 7px 1px rgba(0, 0, 0, 0.3);  
+  padding: 25px 0px;
+  border-radius:9px ;
+  justify-content: center;
+}
+.heroItemsRendered{
+  gap: 45px;
+}
+.Delivery_section{
+  gap: 10px;
+  align-items: center;
+}
+.Delivery_section .icon{
+  justify-content: center;
+}
+.Delivery_section_text h1{
+  font-size: 14px;
+  font-weight: 900;
+  color: #1a1a1a;
+}
+.Delivery_section_text p{
+  font-size: 11px;
+  color: #666;
+}
+/* ------------PopularCategory page started------------- */
 
-.PopularProducts{
-border: 1px solid #333;
+.PopularSection{
+  flex-direction: column;
+  gap: 30px;
+}
+
+.PopularSection .viewAllAndTitle{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popularCategoryAllsection{
+  gap: 25px;
+}
+.viewAllAndTitle h2{
+  font-size: 30px;
+}
+.viewAllAndTitle .ViewAll{
+  color: #00B207;
+  font-size: 16px;
+}
+
+.popularCategoryImgsection{
+flex-direction: column;
+align-items: center;
+justify-content: center;
+border: 1px solid #c4c4c4;
+padding: 20px 10px;
+transition: 0.5s;
+cursor: pointer;
+border-radius: 5px;
+gap: 10px;
+width: 150px;
+}
+.popularCategoryImgsection:hover{
+border: 1px solid #00B207;
+color: #00B207;
+box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+}
+.popularCategoryImgsection img{
+  width: 120px;
+}
+.popularCategoryImgsection .category{
+font-size: 14px;
+}
+
+/* ------------PopularProducts page started------------- */
+.MainPopularProduct{
+  padding: 50px 0px 0px;
+}
+.popularCategoryImgsection2{
+  border: 1px solid #333;
+}
+.popularCategoryImgsection2:hover{
+  border: 1px solid #00B207;
+}
+
+.p-img{
+  position: relative;
+}
+.p-img .saleoff{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #EA4B48;
+  color: #fff;
+  font-size: 14px;
+  padding: 12px;
 }
 .PopularProductSection{
   display: grid;
   grid-template-columns: repeat(5, 2fr);
 }
+
+
 
 /* hotdealsection */
 .Hotdealrightsec{
@@ -31,3 +200,4 @@ border: 1px solid #333;
 .Hotdealssec img{
     width: 120px;
 }
+

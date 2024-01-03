@@ -1,31 +1,36 @@
 import React from "react";
 import HeroMain from "./HeroMain";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight} from '@fortawesome/free-solid-svg-icons';
+
 
 function Hero() {
     return(
-        <div className="Hero">
+        <div className="Hero d-flex">
             {/* hero image section */}
             <div className="HeroSection d-flex">
-                <div className="OrganicFood">
-                    <h1 className="FreshAndHealthy">Fresh & HealthyOrganic Food</h1>
-                    <span className=""></span>
-                    <button className="">Shopnow </button>
-                </div>
-                <div className="offer">
-                    <div className="summerSale">
-                        <span className="Sale75">Summer Sale75% OFF</span>
-                        <span className="Vegetable">Only Fruit & Vegetable</span>
+                <div className="OrganicFood d-flex">
+                    <h1 className="FreshAndHealthy">Fresh & Healthy Organic Food</h1>
+                    <div className="OrganicFoodcontents d-flex">
+                        <div className="OrganicFoodcontentssection">
+                            <span className="Saleupto">Sale up to</span> <span className="percentageoff">30% OFF</span>
+                        </div>
+                        <p className="Freeshipping">Free shipping on all your order.</p>
                     </div>
-                    <div className="SpecialProduct">
-                        <span className="bestDeal">BEST DEAL</span>
-                        <h1 className="DealOfTheMOnth">Special Products Deal of the Month</h1>
-                        <button className="">Shop Now</button>
+                    <button className="Shopnow"> Shop now <FontAwesomeIcon icon={faArrowRight} /></button>
+                </div>
+                <div className="offer d-flex">
+                    <div className="summerSale d-flex">
+                        <button className="Shopnow"> Shop now <FontAwesomeIcon icon={faArrowRight} /></button>
+                    </div>
+                    <div className="SpecialProduct d-flex">
+                        <button className="Shopnow"> Shop now <FontAwesomeIcon icon={faArrowRight} /></button>
                     </div>
                 </div>
             </div>
 
             {/* delivey steps */}
-            <div className="">
+            <div className="shippingmaincontent d-flex">
                 <HeroMain/>
             </div>
 

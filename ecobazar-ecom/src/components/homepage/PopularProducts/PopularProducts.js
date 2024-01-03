@@ -3,10 +3,10 @@ import React from "react";
 function PopularProducts(props) {
     return(
         <div className="PopularProducts">
-            <div className="popularCategoryImgsection">
+            <div className="popularCategoryImgsection2">
                 <div className="p-img">
-                    <span>{props.Data.offer}</span>
-                    {/* <img className="" src="" alt="greenapple"/> */}
+                    <span className="saleoff">{props.Data.offer}</span>
+                    <img className="" src={props.Data.pimg} alt="greenapple"/>
                 </div>
                 <div className="p-contents">
                     <div className="p-nameAndprice">
