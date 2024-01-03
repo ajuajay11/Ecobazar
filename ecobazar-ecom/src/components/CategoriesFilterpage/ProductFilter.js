@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState,useRef } from "react";
 import PriceRangeSlider from "./PriceRangeSlider";
 import { useDispatch, useSelector } from "react-redux";
 import { addCategory } from "../../redux/action";
+
 
 const ProductFilter = ({
   categories,
@@ -9,7 +10,11 @@ const ProductFilter = ({
   setFilteredProducts,
   allTags, stateCategory
 }) => {
-    const dispatch = useDispatch();
+
+  const myRef = useRef();
+  const itemRefs = useRef([]);
+
+  const dispatch = useDispatch();
   const [category, setCategory] = useState(stateCategory);
   const [rating, setRating] = useState([]);
   const [priceRange, setPriceRange] = useState([0, 100]);
@@ -28,11 +33,24 @@ const ProductFilter = ({
     let filteredProducts = products;
 
     // Apply category filter
-    if (category !== "") {
-      console.log("category: ", category);
+    if (category !== "" && category!=='allcategory') {
+      // filteredProducts.map((filterprod, index)=>(
+      //   // filterprod.category===category?itemRefs.current[index].checked=true:itemRefs.current[index].checked=false
+      //   console.log(itemRefs[index])
+
+      // ))
+      itemRefs.current.forEach((itemRef, index) => {
+        // Manipulate individual elements here using itemRef
+        itemRef.value===category?itemRef.checked=true:itemRef.checked=false
+        console.log(`Item ${index + 1} text:`, itemRef.value);
+    });
       filteredProducts = filteredProducts.filter(
         (product) => product.category === category
       );
+    }
+    if (category==='allcategory' || !category) {
+      console.log(myRef);
+      myRef.current.checked=true;
     }
 
     // Apply rating filter
@@ -61,6 +79,7 @@ const ProductFilter = ({
 
   const handleCategoryChange = (e) => {
     setCategory(e.target.value);
+    dispatch(addCategory(e.target.value))
   };
   const handleTagsChange = (e) => {
     console.log(e.target.value);
@@ -92,9 +111,20 @@ const ProductFilter = ({
       {/* Categories */}
       <div>
         <h4>Categories</h4>
-        {categories.map((category) => (
+        <label>
+            <input
+              type="radio"
+              ref={myRef}
+              name="category"
+              value='allcategory'
+              onChange={handleCategoryChange}
+            />
+            allcategory
+          </label>
+        {categories.map((category, index) => (
           <label key={category.categoryText}>
             <input
+              ref={(element) => (itemRefs.current[index] = element)}
               type="radio"
               name="category"
               value={category.categoryText}
