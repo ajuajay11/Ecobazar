@@ -56,8 +56,22 @@ const wishlistSlice = createSlice({
   },
 });
 
+
+
+const categorySlice = createSlice({
+  name: 'category',
+  initialState: '',
+  reducers: {
+    addCategory: (state, action) => {
+      return action.payload;
+    }
+  },
+});
+
 export const { addToCart, removeFromCart } = cartSlice.actions;
 export const { addToWishlist, removeFromWishlist } = wishlistSlice.actions;
+export const { addCategory } = categorySlice.actions;
 
 export const cartReducer = cartSlice.reducer;
 export const wishlistReducer = wishlistSlice.reducer;
+export const categoryReducer = categorySlice.reducer;

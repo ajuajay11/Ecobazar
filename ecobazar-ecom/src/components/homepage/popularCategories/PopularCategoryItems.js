@@ -3,7 +3,6 @@ import Vegtables from './../images/Vegetables.png'
 
 let PopularCategoryItems=[{
     img:Vegtables,
-
     categoryText:'Fresh Fruit'
     },
     {
@@ -18,30 +17,30 @@ let PopularCategoryItems=[{
     img:Vegtables,
     categoryText:'Snacks'
     },{
+    img:Vegtables,
+    categoryText:'Beverages'
+    },
+    {
         img:Vegtables,
-        categoryText:'Beverages'
-        },
-        {
+        categoryText:'Beauty & Health'
+        },{
             img:Vegtables,
-            categoryText:'Beauty & Health'
+            categoryText:'Bread & Bakery'
             },{
                 img:Vegtables,
-                categoryText:'Bread & Bakery'
+                categoryText:'Baking Needs'
                 },{
                     img:Vegtables,
-                    categoryText:'Baking Needs'
+                    categoryText:'Cooking'
                     },{
                         img:Vegtables,
-                        categoryText:'Cooking'
+                        categoryText:'Diabetic Food'
                         },{
                             img:Vegtables,
-                            categoryText:'Diabetic Food'
+                            categoryText:'Dish Detergents'
                             },{
                                 img:Vegtables,
-                                categoryText:'Dish Detergents'
-                                },{
-                                    img:Vegtables,
-                                    categoryText:'Oil'
-                                    }]
+                                categoryText:'Oil'
+                                }]
 
 export default PopularCategoryItems;
