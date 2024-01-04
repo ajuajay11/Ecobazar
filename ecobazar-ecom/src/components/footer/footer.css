@@ -1,19 +1,92 @@
 /* footer section starts */
+.Newsletter{
+    padding: 50px 0px;
+}
 .FooterSectionComp{
     flex-direction: column;
     background: #333;
     color: #fff;
+    padding: 30px 0px;
+}
+.footertopandbottom{
+    flex-direction: column;
+    gap: 30px;
 }
 .footersecAll{
-    gap: 40px;
+    justify-content: space-between;
 }
-.Logo_section{
-    flex: 40%;
+.CopyrightSection{
+    align-items: center;
+}
+.CopyrightSection span{
+    color: #808080;
+    font-size: 14px;
+}
+.FooterLogo_section{
+    flex-direction: column;
+    gap: 10px;
+}
+.footer_items li{
+    font-weight: 300;
+    font-size: 14px;
+    color: #808080;
+    
+}
+.footer_item_terms{
+color: #fff !important;
+}
+.FooterLogo_section p{
+    font-size: 14px;
+    color: #808080;
+    width: 360px;
+}
+.FooterLogo_section .numberandemail{
+    font-size: 14px;
+    gap: 20px;
+}
+.numberandemail .lineunder{
+    padding-bottom: 4px;
+    border-bottom: 2px solid #00B207;
 }
 .FooterlistComp{
-    flex: 60%;
+    gap: 50px;
+    font-size: 16px;
+    font-weight: 300;
 }
 .footer_items{
     flex-direction: column;
     list-style: none;
+    gap: 20px;
+}
+.Subscribesec{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.NewsletterContentsec .SubcribeourNewslettertitle{
+    font-size: 24px;
+    color: #1a1a1a;
+}
+.NewsletterContentsec .SubcribeourNewsletterpara{
+    font-size: 14px;
+    color: #999;
+    width: 460px;
+}.socialiconsAll{
+    align-items: center;
+    justify-content: center;
+    color: #333;
+}
+.socialicons{
+padding: 10px;
+cursor: pointer;
+border-radius: 50%;
+transition: 0.4s;
+font-size: 20px;
+}
+.socialicons:hover{
+    background: #00B207;
+    color: #fff;
+}
+.socialicons .Fa{
+    padding: 10px;
 }
