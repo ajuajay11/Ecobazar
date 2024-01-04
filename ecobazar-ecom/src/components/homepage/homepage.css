@@ -124,7 +124,9 @@ object-fit: contain;
   flex-direction: column;
   gap: 30px;
 }
-
+.ViewAll{
+  cursor: pointer;
+}
 .viewAllAndTitle{
   display: flex;
   justify-content: space-between;
@@ -175,7 +177,7 @@ font-size: 14px;
 }
 .PopularProducts{
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
 }
 .popularCategoryImgsection2{
   border: 1px solid #d5d5d5;
@@ -201,6 +203,7 @@ font-size: 14px;
   color: #fff;
   opacity: 0;
 }
+
 .cartButton .cartsvg{
   font-size: 14px;
    color: #fff;
@@ -208,11 +211,20 @@ font-size: 14px;
      padding:8px; 
      border-radius:15px;
 }
-.cartButton .cartsvg:hover{
+.cartButton .white{
+  transition: 0.3s;
+
+  background: #c4c4c4;
+}
+.cartButton .green{
+  transition: 0.3s;
+  background: #00B207;
+}
+/* .cartButton .cartsvg:hover{
   
     background: #00B207 ;
     transition: 0.5s;
-}
+} */
 .p-contents.cartButton .cartsvg:hover{
     background-color: #00B207;
 }
@@ -259,6 +271,7 @@ font-size: 14px;
 .PopularProductSection{
   display: grid;
   grid-template-columns: repeat(5, 2fr);
+  align-content: start;
 }
 .p-contents{
   justify-content: space-between;

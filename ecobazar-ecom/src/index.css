@@ -7,7 +7,9 @@
 body{
  font-family: 'Poppins', sans-serif;
 }
-
+.t-t-c{
+  text-transform: capitalize;
+}
 .d-flex{
     display: flex;
 }
@@ -17,6 +19,10 @@ body{
 .p-l-r{
     padding: 0px 24px;
 }
+.p-b{
+  padding-bottom: 6px;
+}
+
 .grid-container {
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap to the next line */
@@ -28,9 +34,26 @@ body{
   max-width: 1300px;
   margin: 0 auto;
 }
-
+.f-col{
+  flex-direction: column;
+}
+.f-row{
+  flex-direction: row;
+}
+.gp{
+  gap: 1%;
+}
+.gp-5{
+  gap: 10px;
+}
+.gp-10{
+  gap: 15px;
+}
 /* poppins all css forms */
-
+.bg-b{
+  background: #000;
+  color: #fff;
+}
 .normal-text {
     font-family: 'Poppins', sans-serif;
     font-weight: 400; /* Weight 400 (regular) */
@@ -65,15 +88,34 @@ body{
     background: #F2F2F2;
   }
   
-<<<<<<< HEAD
-#shoppingcart , #shoppingcart th, #shoppingcart td {
-  border:1px solid black;
-}
-#shoppingcart{
-  width: 300px;
-}
-=======
+
 .footerandNewsletter .newsletter{
   justify-content: space-between;
 }
->>>>>>> d0ecae69f2ae2b164c6d38551dad467d79143bc8
+.b-shadow{
+  box-shadow: 0 0px 3px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.p-lr-20{
+padding: 0px 15px 0px 0px;
+}
+.p-tb-50{
+  padding: 40px 0px;
+}
+.white{
+  color: #fff;
+}
+
+
+/* breadcrums */
+
+.breadcrumsbg{
+  background: url(./../src/components/homepage/images/Breadcrumbs.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-decoration: none;
+  padding: 35px 0px;
+  font-size: 14px;
+}

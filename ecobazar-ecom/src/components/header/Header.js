@@ -9,9 +9,15 @@ import { addToCart, addToWishlist, removeFromWishlist, removeFromCart } from './
 
 
 function Header(){
+    const handleTotal=()=>{
+        return (cart.reduce((accumulator, currentValue) => (accumulator + Number(currentValue.price.replace(/\$/g, "")) * currentValue.count),0)).toFixed(2);
+    }
     const navigate = useNavigate();
     const handleCartNavigate=()=>{
         navigate("/shoppingcart")
+    }
+    const handleWishlistNavigate=()=>{
+        navigate("/wishlist")
     }
     const cartState = useSelector(state => state.cart);
     const wishState = useSelector(state => state.wishlist);
@@ -58,7 +64,7 @@ function Header(){
                 </Link>
                     
                     <div className="input d-flex">
-                        <div className="inputWithicon">
+                        <div onClick={handleWishlistNavigate} className="inputWithicon">
                         <FontAwesomeIcon className="searchbox" icon={faMagnifyingGlass} />
                            <input type="text" placeholder="Search"/>
                         </div>
@@ -76,7 +82,7 @@ function Header(){
                     </div>
                     <div className="carttexts d-flex" onClick={handleCartNavigate}>
                             <span className="">Shopping Cart</span>
-                            <span className="price">$0.00</span>
+                            <span className="price">$ {handleTotal()} </span>
                     </div>
                 </div>
             </div>
