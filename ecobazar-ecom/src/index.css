@@ -15,7 +15,7 @@ body{
     justify-content: space-between;
 }
 .p-l-r{
-    padding: 0px 160px;
+    padding: 0px 24px;
 }
 .grid-container {
     display: flex;
