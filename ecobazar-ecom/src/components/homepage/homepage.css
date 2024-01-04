@@ -2,24 +2,38 @@
 .HeroSection{
 gap: 30px;
 }
+
+
 .Hero{
   padding: 20px 0px;
   flex-direction: column;
   gap: 30px;
 }
+.container{
+  gap: 30px;
+}
+.organicAll{
+  position: relative;
+}
+.organicAll img{
+  width: 100%;
+  border-radius: 10px;
+  
+  object-fit: cover ;
+}
 .OrganicFood{
-    background: url(./images/BannarBig.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 70%;
-    height: 70vh;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     color: #fff;
     gap: 20px;
+    position: absolute;
+    top: 30%;
     padding-left: 40px;
     border-radius: 15px;
+}
+.OrganicFood img{
+  object-fit: contain;
 }
 .OrganicFoodcontents{
   border-left: 3px solid #84D187;
@@ -53,34 +67,24 @@ gap: 30px;
   padding: 15px 20px;
 }
 .offer{
-  width: 30%;
   gap: 30px;
   flex-direction: column;
 }
 
-.offer .offer_SpecialProduct{
-  background: url(./images/offeroneimg.png);  
-  background-size: contain;
-    background-repeat: no-repeat;
-    height:100% ;
+.offer_summerSaleAll{
+  position: relative;
+}
+.offer_summerSaleAll img{
+  object-fit: contain;
 }
 .offer_summerSale{
-  justify-content: start;
-  align-items: center;
-  padding-left: 28px;
+  position: absolute;
 }
-.offer_SpecialProduct{
-  justify-content: center;
-  align-items: center;
-  padding-top: 100px;
+.offer_SpecialProduct img{
+object-fit: contain;
 
 }
-.offer .offer_summerSale{
- background: url(./images/offertwoimg.png);
-  background-size: contain;
-    background-repeat: no-repeat;
-    height:100%;
-}
+
 .offer_summerSale button,
 .offer_SpecialProduct button {
   padding: 0;
@@ -519,8 +523,17 @@ font-size: 14px;
   flex-shrink: unset;
   padding: 20px 0px;
 }
+.Followsus_dblsec{
+  gap: 10px;
+  flex-direction: column;
+}
+.Followusoninnstagram{
+  padding:10px 0px 40px ;
+}
 .followUsonInstagrasmsubsection{
   flex-direction: column;
+  gap: 20px;
+  text-align: center;
 }
 .divinstaimgandicon {
   justify-content: space-between;

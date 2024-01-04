@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot,faMagnifyingGlass,faBagShopping,faPhone,faHeart,faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { Link } from "react-router-dom";
 import logo from './../homepage/images/Logo.png'
 
 function Header(){
@@ -34,9 +35,12 @@ function Header(){
 
             <div className="HeaderSection d-flex s-btw p-l-r">
                 <div className="HeaderSection_Logo d-flex">
-                    <div className="logo">
+                <Link className="LogoMain" to="/">
+                <div className="logo">
                         <img src={logo} alt="logo"/>
                     </div>
+                </Link>
+                    
                     <div className="input d-flex">
                         <div className="inputWithicon">
                         <FontAwesomeIcon className="searchbox" icon={faMagnifyingGlass} />

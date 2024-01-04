@@ -22,7 +22,7 @@ let Instagram=[instagrampost1,instagrampost3,instagrampost4,instagrampost5,insta
 function Followus(){
 return(
     <div className="Followusoninnstagram">
-        <div className="Followsus_dblsec mx-w-1300">
+        <div className="Followsus_dblsec d-flex mx-w-1300">
         <div className="Companylogos d-flex">
             {companyLogoss.map((logocomp)=>(
                 <div className="">

@@ -51,8 +51,20 @@ body{
     font-weight: 400; /* Weight 400 (regular) */
     font-style: italic; /* Apply italic style */
   }
-
+.LogoMain{
+  text-decoration: none;
+}
   .PriceRangeDiv{
     width: 200px;
   }
+  .Newsletter{
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footerandNewsletter{
+    background: #F2F2F2;
+  }
   
+.footerandNewsletter .newsletter{
+  justify-content: space-between;
+}
