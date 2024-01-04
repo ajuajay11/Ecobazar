@@ -56,3 +56,9 @@ body{
     width: 200px;
   }
   
+#shoppingcart , #shoppingcart th, #shoppingcart td {
+  border:1px solid black;
+}
+#shoppingcart{
+  width: 300px;
+}
