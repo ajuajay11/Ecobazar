@@ -159,6 +159,7 @@ import {
   faEye,
   faShoppingBag,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 import apple from "./../images/Apple.png";
 import ratingfour from "./../../homepage/images/Rating_four.png";
 import Hotdealright from "./Hotdealright";
@@ -215,9 +216,9 @@ function Hotdeals() {
         <div className="title">
           <h2>Hot Deals</h2>
         </div>
-        <div className="ViewAll">
-          View All <FontAwesomeIcon icon={faArrowRight} />
-        </div>
+        <Link className="LogoMain" to="/categories">
+          <div className="ViewAll">View All  <FontAwesomeIcon icon={faArrowRight} /></div>
+        </Link>
       </div>
 
       {/* Main Hotdeals Section */}
