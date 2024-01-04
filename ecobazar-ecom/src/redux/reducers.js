@@ -1,25 +1,3 @@
-// const cartReducer = (state = [], action) => {
-//     switch (action.type) {
-//       case 'ADD_TO_CART':
-//         return [...state, action.payload];
-//       case 'REMOVE_FROM_CART':
-//         return state.filter(item => item.id !== action.payload);
-//       default:
-//         return state;
-//     }
-//   };
-  
-//   const wishlistReducer = (state = [], action) => {
-//     switch (action.type) {
-//       case 'ADD_TO_WISHLIST':
-//         return [...state, action.payload];
-//       case 'REMOVE_FROM_WISHLIST':
-//         return state.filter(item => item.id !== action.payload);
-//       default:
-//         return state;
-//     }
-//   };
-
 import { createSlice } from '@reduxjs/toolkit';
 
 const cartSlice = createSlice({
@@ -29,11 +7,21 @@ const cartSlice = createSlice({
     addToCart: (state, action) => {
       const existingItemIndex = state.findIndex(item => item.id === action.payload.id);
       if (existingItemIndex === -1) {
-        state.push(action.payload);
+        state.push({ ...action.payload, count: 1 });
       }
     },
     removeFromCart: (state, action) => {
       return state.filter(item => item.id !== action.payload.id);
+    },
+    addCartCount: (state, action) => {
+      const targetObject = state.find(obj => obj.id === action.payload.id);
+      targetObject.count += 1;
+    },
+    removeCartCount: (state, action) => {
+      const targetObject = state.find(obj => obj.id === action.payload.id);
+      if(targetObject.count>1) {
+        targetObject.count -= 1;
+      }
     },
   },
 });
@@ -68,7 +56,7 @@ const categorySlice = createSlice({
   },
 });
 
-export const { addToCart, removeFromCart } = cartSlice.actions;
+export const { addToCart, removeFromCart, addCartCount, removeCartCount } = cartSlice.actions;
 export const { addToWishlist, removeFromWishlist } = wishlistSlice.actions;
 export const { addCategory } = categorySlice.actions;
 

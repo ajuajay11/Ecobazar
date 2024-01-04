@@ -1,8 +1,11 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingBag,faHeart,faEye} from '@fortawesome/free-solid-svg-icons';
+import { addToCart } from "../../../redux/action";
+import { useDispatch } from 'react-redux';
 
 function PopularProducts(props) {
+    const dispatch = useDispatch()
     return(
         <div className="PopularProducts d-flex">
             <div className="popularCategoryImgsection2 d-flex">
@@ -24,8 +27,8 @@ function PopularProducts(props) {
                         <div><span className="price">{props.Data.price}</span> <span className="discount line-thr">{props.Data.price}</span></div>
                         <img className="star" src={props.Data.starImg} alt="greenapple"/>
                     </div>
-                    <div className="cartButton">
-                        <span><FontAwesomeIcon className="cartsvg" icon={faShoppingBag} /></span>
+                    <div className="cartButton"  >
+                        <span><FontAwesomeIcon className="cartsvg" icon={faShoppingBag} onClick={()=>dispatch(addToCart(props.Data))} /></span>
                     </div>
                 </div>
             </div>
