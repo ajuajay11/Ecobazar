@@ -51,14 +51,29 @@ body{
     font-weight: 400; /* Weight 400 (regular) */
     font-style: italic; /* Apply italic style */
   }
-
+.LogoMain{
+  text-decoration: none;
+}
   .PriceRangeDiv{
     width: 200px;
   }
+  .Newsletter{
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footerandNewsletter{
+    background: #F2F2F2;
+  }
   
+<<<<<<< HEAD
 #shoppingcart , #shoppingcart th, #shoppingcart td {
   border:1px solid black;
 }
 #shoppingcart{
   width: 300px;
 }
+=======
+.footerandNewsletter .newsletter{
+  justify-content: space-between;
+}
+>>>>>>> d0ecae69f2ae2b164c6d38551dad467d79143bc8
