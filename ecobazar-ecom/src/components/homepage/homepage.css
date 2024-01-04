@@ -505,12 +505,50 @@ font-size: 14px;
    
 }
 #item-11 {
-
- 
    grid-row-start: 3;
    grid-column-start: 5;
 
    grid-row-end: 4;
    grid-column-end: 6;
-   
+}
+
+/* Follow us on instagram started */
+
+.Companylogos{
+  justify-content: space-between;
+  flex-shrink: unset;
+  padding: 20px 0px;
+}
+.followUsonInstagrasmsubsection{
+  flex-direction: column;
+}
+.divinstaimgandicon {
+  justify-content: space-between;
+}
+.divinstaimgandicon .instaimges{
+  position: relative;
+  cursor: pointer;
+
+}
+.divinstaimgandicon .hide{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.instaimges img:hover{
+  filter: brightness(0.5);
+}
+.hide svg{
+  color: #fff !important;
+  fill: #fff;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Add transition effect */
+}
+
+/* Define the hover effect to change opacity */
+.instaimges:hover .hide svg {
+  opacity: 1; /* Show SVG on hover */
+  filter: brightness(0.5);
+
 }

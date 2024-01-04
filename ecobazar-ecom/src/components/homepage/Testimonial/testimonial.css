@@ -4,12 +4,14 @@
 }
 
 .testimonial-slider {
+  display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
     position: relative;
     overflow: hidden;
-    
+    padding: 40px 0px;
+    gap: 15px;
   }
   
   .slides {
@@ -24,5 +26,50 @@
     padding: 20px;
     border: 1px solid #ccc; 
     transition: transform 0.5s ease;
+    box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.3);  
+    background: #fff;
+    border-radius: 6px;
+    gap: 20px;
+    flex-direction: column;
   }
-  
+  .testnameAndstar{
+    justify-content: space-between;
+    align-items:center;
+  }
+  .testimonialname{
+    gap: 10px;
+  }
+  .Robertlogo{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .Robertlogo span{
+    font-size: 16px;
+    color: #4D4D4D;
+  }
+  .Robertlogo p{
+    color: #4D4D4D;
+    font-size: 14px;
+    }
+
+  .testimonialtext{
+    color: #4D4D4D;
+    font-size: 14px;
+  }
+  .ViewAll{
+    gap: 20px;
+  }
+  .ViewAll button{
+    padding: 16px 18px;
+    background-color: #fff;
+    color: black;
+    border: none;
+    font-size: 18px;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .ViewAll button:hover{
+    background: #00B207;
+    color: #fff;
+  }
