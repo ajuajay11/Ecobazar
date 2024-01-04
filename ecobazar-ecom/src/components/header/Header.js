@@ -1,10 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot,faMagnifyingGlass,faBagShopping,faPhone,faHeart,faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
 import logo from './../homepage/images/Logo.png'
+import { useNavigate } from "react-router-dom";
+import { useSelector } from 'react-redux';
+import { addToCart, addToWishlist, removeFromWishlist, removeFromCart } from './../../redux/action';
+
 
 function Header(){
+    const navigate = useNavigate();
+    const handleCartNavigate=()=>{
+        navigate("/shoppingcart")
+    }
+    const cartState = useSelector(state => state.cart);
+    const wishState = useSelector(state => state.wishlist);
+    const [cart, setCart] = useState([])
+    const [wish, setWish] = useState([])
+    useEffect(() => {
+      setCart(cartState)
+      setWish(wishState)
+    }, [cartState, wishState])
 
     return (
         <div className="HeadersectionAll">
@@ -52,13 +68,13 @@ function Header(){
                 <div className="HeaderSection_CartButton d-flex">
                     <div className="wishlist"><FontAwesomeIcon icon={faHeart} /></div> 
                     <div className="line"> | </div>
-                    <div className="cart">
+                    <div className="cart" onClick={handleCartNavigate}>
                         <div className="cartcounter">
                            <FontAwesomeIcon icon={faBagShopping} />
-                           <span className="counter">0</span>
+                           <span className="counter">{cart.length}</span>
                         </div>
                     </div>
-                    <div className="carttexts d-flex">
+                    <div className="carttexts d-flex" onClick={handleCartNavigate}>
                             <span className="">Shopping Cart</span>
                             <span className="price">$0.00</span>
                     </div>

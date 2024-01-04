@@ -165,8 +165,11 @@ import ratingfour from "./../../homepage/images/Rating_four.png";
 import Hotdealright from "./Hotdealright";
 import Data from "../../Data/Data";
 import PopularProducts from "../PopularProducts/PopularProducts";
+import { addToCart, addToWishlist, removeFromWishlist, removeFromCart } from './../../../redux/action';
+import { useDispatch } from 'react-redux';
 
 function Hotdeals() {
+  const dispatch = useDispatch()
   const [timer, setTimer] = useState({
     days: 5,
     hours: 0,

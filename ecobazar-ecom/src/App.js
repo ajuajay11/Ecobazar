@@ -11,6 +11,7 @@ import { Provider } from 'react-redux';
 import store from './redux/store';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Categories from './components/CategoriesFilterpage/Categories';
+import ShoppingCartPage from './components/ShoppingCartPage/ShoppingCartPage';
 
 function App() {
   return (
@@ -18,10 +19,9 @@ function App() {
    <Provider store={store}>
     <Router>
       <Routes>
-       
         <Route path="/" element={<Homepage />} />
         <Route path="/categories" element={<Categories />} />
-       
+        <Route path="/shoppingcart" element={<ShoppingCartPage />} />
       </Routes>
     </Router>
 
