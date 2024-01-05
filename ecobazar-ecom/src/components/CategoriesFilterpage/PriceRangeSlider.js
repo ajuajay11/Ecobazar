@@ -26,8 +26,8 @@ const PriceRangeSlider = ({setPriceRange}) => {
           onChange={handleRangeChange}
         />
       </label>
-      <p>Min: {range[0]}</p>
-      <p>Max: {range[1]}</p>
+      <div>price:<span> ${range[0]} - ${range[1]}</span></div>
+     
     </div>
   );
 };

@@ -47,9 +47,17 @@ function FooterSection_All(){
                         {FooterContent} 
                     </div>
                 </div>
-                <div className="CopyrightSection d-flex s-btw">
+                <div className="mx-w-1300">
+                    <div className="CopyrightSection s-btw d-flex ">
+                    <div className="d-flex">
                     <span>Ecobazar eCommerce © 2021. All Rights Reserved</span>
+                    </div>
+                    <div className="d-flex">
+                    
                     <img className="" src={Pay} />
+                    </div>
+                    </div>
+                    
                 </div>
                 </div>
                 
