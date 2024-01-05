@@ -1,0 +1,128 @@
+/* ContactUs.css */
+
+/* .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+  } */
+  
+  .contact-main {
+    max-width: 1300px;
+    width: 100%;
+  }
+  
+  .contact-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0px;
+    gap: 30px;
+  }
+  
+  
+  .contact-address {
+    display: flex;
+    box-shadow: 0 3px 7px 1px rgba(0, 0, 0, 0.3);  
+    flex-direction: column;
+    border-radius: 10px;
+  }
+  .contact-box .contacticon{
+    font-size: 30px;
+    color: #05722d;
+  }
+  .contact-box {
+    margin-bottom: 10px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-box-text{
+    text-align: center;
+  }
+  .contact-right-content {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 3px 7px 1px rgba(0, 0, 0, 0.3);  
+
+  }
+  
+  .contact-form {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+  }
+  
+  .contact-form input {
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+  .contact-form input:focus {
+    
+    border: 1px solid #05722d !important;
+  }
+  
+  
+  .contact-submit {
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .contact-submit:hover {
+    width: auto;
+    background-color: #0056b3;
+  }
+  .contactbuttoon{
+    border: none;
+    background-color: #05722d;
+    padding: 14px 60px;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 20px;
+    border-radius: 18px;
+    width: max-content;
+  }
+  .mapsec {
+    margin-top: 20px;
+  }
+  
+  .map {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  .form-group {
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-row {
+    display: flex;
+  }
+  
+  .contact-input-half {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .contact-input-half:last-child {
+    margin-right: 0;
+  }
+  
+  .contact-submit {
+    margin-top: 10px;
+  }
