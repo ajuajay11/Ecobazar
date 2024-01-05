@@ -16,7 +16,7 @@ function Header(){
     const handleCartNavigate=()=>{
         navigate("/shoppingcart")
     }
-    const handleWishlistNavigate=()=>{
+    const wishlistNavigate=()=>{
         navigate("/wishlist")
     }
     const cartState = useSelector(state => state.cart);
@@ -64,7 +64,7 @@ function Header(){
                 </Link>
                     
                     <div className="input d-flex">
-                        <div onClick={handleWishlistNavigate} className="inputWithicon">
+                        <div className="inputWithicon">
                         <FontAwesomeIcon className="searchbox" icon={faMagnifyingGlass} />
                            <input type="text" placeholder="Search"/>
                         </div>
@@ -72,7 +72,7 @@ function Header(){
                     </div>
                 </div>
                 <div className="HeaderSection_CartButton d-flex">
-                    <div className="wishlist"><FontAwesomeIcon icon={faHeart} /></div> 
+                    <div onClick={wishlistNavigate}  className="wishlist"><FontAwesomeIcon icon={faHeart} /></div> 
                     <div className="line"> | </div>
                     <div className="cart" onClick={handleCartNavigate}>
                         <div className="cartcounter">
@@ -91,12 +91,12 @@ function Header(){
             <div className="Navigation_section d-flex s-btw p-l-r">
                 <div className="Navigation">
                     <ul className="nav d-flex">
-                        <li className="active">Home <FontAwesomeIcon icon={faChevronDown} /></li>
+                        <li className="active">Home<Link className="LogoMain" to='/'> <FontAwesomeIcon icon={faChevronDown} /></Link></li>
                         <li>Shop <FontAwesomeIcon icon={faChevronDown} /></li>
                         <li>Pages <FontAwesomeIcon icon={faChevronDown} /></li>
                         <li>Blog <FontAwesomeIcon icon={faChevronDown} /></li>
                         <li>About Us <FontAwesomeIcon icon={faChevronDown} /></li>
-                        <li>Contact Us <FontAwesomeIcon icon={faChevronDown} /></li>
+                        <li> <Link className="LogoMain" to='/contactus'>Contact Us <FontAwesomeIcon icon={faChevronDown} /></Link></li>
                     </ul>
                 </div>
                 <div className="PhoneNumber">

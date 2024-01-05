@@ -5,25 +5,38 @@ import {
   faHeart,
   faEye,
 } from "@fortawesome/free-solid-svg-icons";
-import { addToCart, removeFromCart } from "../../../redux/action";
+import { addToCart, addToWishlist, removeFromCart, removeFromWishlist } from "../../../redux/action";
 import { useDispatch, useSelector } from "react-redux";
 
 function PopularProducts(props) {
   const dispatch = useDispatch();
   const cartState = useSelector((state) => state.cart);
-  let [cart, setCart] = useState();
-
+  const wishState = useSelector((state) => state.wishlist);
+  const [cart, setCart] = useState([]);
+  const [wish, setWish] = useState([]);
+  // const [total, setTotal] = useState()
   useEffect(() => {
     setCart(cartState);
-  }, [cartState]);
+    setWish(wishState);
+    // handleTotal();
+  }, [cartState, wishState]);
 
   const handlecart = (data) => {
-    dispatch(addToCart(props.Data));
     let existingData = cart.find((d) => d.id === data.id);
     if (existingData) {
       dispatch(removeFromCart(data));
     } else {
       dispatch(addToCart(data));
+    }
+  };
+  const handleWish = (data) => {
+    let existingData = cart.find((d) => d.id === data.id);
+    if (existingData) {
+      dispatch(removeFromWishlist(data));
+      console.log("click working wish exist");
+    } else {
+      dispatch(addToWishlist(data));
+    console.log("click working wish nnot exist");
     }
   };
 
@@ -34,8 +47,9 @@ function PopularProducts(props) {
           <span className="saleoff">{props.Data.offer}</span>
           <img className="" src={props.Data.pimg} alt="greenapple" />
           <div className="wishlistAndView d-flex">
-            <div className="wishlist">
-              <FontAwesomeIcon icon={faHeart} />
+            <div className={`wishlist ${(wish?.find((d) => d.id === props.Data.id))?'green':'white'}`}>
+              <FontAwesomeIcon className=""
+  icon={faHeart} onClick={()=>handleWish(props.Data)} />
             </div>
             <div className="viewimg">
               <FontAwesomeIcon icon={faEye} />
@@ -53,7 +67,7 @@ function PopularProducts(props) {
           </div>
           <div className="cartButton">
             <span>
-                {console.log((cart?.find((d) => d.id === props.Data.id))?'green':'white')}
+                {/* {console.log((cart?.find((d) => d.id === props.Data.id))?'green':'white')} */}
               <FontAwesomeIcon
                 className={`cartsvg ${(cart?.find((d) => d.id === props.Data.id))?'green':'white'}`}
                 icon={faShoppingBag}

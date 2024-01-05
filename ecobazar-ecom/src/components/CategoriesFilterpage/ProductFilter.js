@@ -81,6 +81,7 @@ const ProductFilter = ({
       filteredProducts = filteredProducts.filter((product) =>
         product.tags.some((tag) => desiredTags.includes(tag))
       );
+      console.log("tags", filteredProducts);
     }
     // Update the state with the filtered products
     setFilteredProducts(filteredProducts);
@@ -91,13 +92,12 @@ const ProductFilter = ({
     dispatch(addCategory(e.target.value))
   };
   const handleTagsChange = (e) => {
-    console.log(e.target.value);
-    if (!desiredTags.includes(e.target.value)) {
+    if (!desiredTags.includes(e.target.textContent)) {
       e.target.style.backgroundColor = "green";
-      setDesiredTags([...desiredTags, e.target.value]);
+      setDesiredTags([...desiredTags, e.target.textContent]);
     } else {
       e.target.style.backgroundColor = "#808080";
-      let newTags = desiredTags.filter((tag) => tag !== e.target.value);
+      let newTags = desiredTags.filter((tag) => tag !== e.target.textContent);
       setDesiredTags(newTags);
     }
   };
@@ -218,7 +218,7 @@ const ProductFilter = ({
   <div className="grid-container">
     {showCategories[3] && (
       allTags.slice(1, 14).map((tag, i) => (
-        <div key={i} className="Populattagsbutton" type="button" value={tag} onClick={handleTagsChange}>
+        <div key={i} className="Populattagsbutton" onClick={handleTagsChange}>
           {tag}
         </div>
       ))

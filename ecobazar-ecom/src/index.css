@@ -75,7 +75,7 @@ body{
     font-style: italic; /* Apply italic style */
   }
 .LogoMain{
-  text-decoration: none;
+  text-decoration: none;color:unset;
 }
   .PriceRangeDiv{
     width: 200px;

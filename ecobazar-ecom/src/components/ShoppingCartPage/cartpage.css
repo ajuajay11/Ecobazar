@@ -54,6 +54,7 @@
 
   .carttitle{
     padding: 20px 0px;
+    text-align: center;
   }
   /* Buttons and coupon code section */
   .checkout-buttons {

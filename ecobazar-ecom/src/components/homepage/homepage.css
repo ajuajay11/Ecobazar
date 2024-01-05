@@ -70,28 +70,34 @@ gap: 30px;
   gap: 30px;
   flex-direction: column;
 }
-
-.offer_summerSaleAll{
+.offer .rightbottom{
   position: relative;
 }
-.offer_summerSaleAll img{
-  object-fit: contain;
+.offer .righttop{
+  position: relative;
 }
-.offer_summerSale{
+.offer_summerSaletop{
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
 }
+.offer_summerSaletop .Shopnow{
+  background-color: unset;
+}
+.offer_summerSalebottom .Shopnow{
+  background-color: unset;
+}
+.offer_summerSalebottom{
+  position: absolute;
+  top: 50%;
+  left: 4%;
+}
+
 .offer_SpecialProduct img{
 object-fit: contain;
-
 }
 
-.offer_summerSale button,
-.offer_SpecialProduct button {
-  padding: 0;
-  background: none;
-  cursor: pointer;
-
-}
 
 .shippingmaincontent{
   box-shadow: 0 3px 7px 1px rgba(0, 0, 0, 0.3);  
@@ -106,6 +112,7 @@ object-fit: contain;
   gap: 10px;
   align-items: center;
 }
+
 .Delivery_section .icon{
   justify-content: center;
 }
@@ -211,14 +218,14 @@ font-size: 14px;
      padding:8px; 
      border-radius:15px;
 }
-.cartButton .white{
+.cartButton .white, .white{
   transition: 0.3s;
 
-  background: #c4c4c4;
+  background: #c4c4c4 !important;
 }
-.cartButton .green{
+.cartButton .green, .green{
   transition: 0.3s;
-  background: #00B207;
+  background: #00B207 !important;
 }
 /* .cartButton .cartsvg:hover{
   
